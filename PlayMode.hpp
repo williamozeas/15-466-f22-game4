@@ -2,6 +2,7 @@
 
 #include "Scene.hpp"
 #include "Sound.hpp"
+#include "TextRenderer.hpp"
 
 #include <glm/glm.hpp>
 
@@ -25,5 +26,6 @@ struct PlayMode : Mode {
 		uint8_t pressed = 0;
 	} left, right, down, up;
 
+    TextRenderer text_renderer;
 
 };

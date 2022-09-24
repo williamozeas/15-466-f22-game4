@@ -14,7 +14,7 @@
 
 
 PlayMode::PlayMode() {
-
+    text_renderer = TextRenderer();
 }
 
 PlayMode::~PlayMode() {
@@ -80,7 +80,7 @@ void PlayMode::update(float elapsed) {
 
 void PlayMode::draw(glm::uvec2 const &drawable_size) {
 	//update camera aspect ratio for drawable:
-
+    text_renderer.RenderText("Testing", glm::vec2(100,100));
 	GL_ERRORS();
 }
 
